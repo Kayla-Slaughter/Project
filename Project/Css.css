@@ -1,0 +1,75 @@
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aquamarine;
+    width: 75%;
+}
+body header h1{
+    margin: 1em;
+    color: aliceblue;
+}
+body header nav{
+    margin: 1em;
+}
+body header nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 1em;
+    border: 3px double black;
+    border-radius: 20%;
+}
+body .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em;
+    text-align: center;
+}
+body .main .imgbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px double black;
+    border-radius: 10%;
+    padding: 2em;
+    margin: 2em;
+}
+body .main .imgbox .babies{
+    width: 300px;
+}
+body .main .imgbox .family{
+    width: 300px;
+}
+body header .form {
+    margin-left: 4em;
+}
+@media only screen and (max-width: 1023px) {
+    body header {
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 650px) {
+    body header img {
+    display: none;
+    }
+    body header .form {
+    display: none;
+    }
+    body .main .imgBox img {
+    max-width: 200px;
+    }
+}
